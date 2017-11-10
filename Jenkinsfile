@@ -8,8 +8,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh cd build.xml
-                set target 'run'
+                sh build.xml
+                
             }
             }
         }
