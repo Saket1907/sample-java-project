@@ -8,7 +8,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh build.xml
+                sh 'build'
+                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
                 
             }
             }
