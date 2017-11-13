@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                ant compile jar run
+                sh ant compile jar run
                 
                 
             }
