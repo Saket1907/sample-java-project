@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh ant compile jar run
+                sh ant -Dbuild=build/classes bundle
                 
                 
             }
